@@ -1,0 +1,4 @@
+Promedio de pasos: 1338
+Promedio de tiempo = 70
+Mayor cantidad de pasos: 5177
+Menor cantidad de pasos: 0
