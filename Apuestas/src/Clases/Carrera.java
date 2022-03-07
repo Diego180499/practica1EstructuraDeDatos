@@ -36,16 +36,16 @@ public class Carrera {
     public void verificarApuesta(Apuesta apuesta) {
         long primero = System.nanoTime();
 
-        boolean[] checkers = new boolean[10];
+        boolean[] verificador = new boolean[10];
         int[] numeros = apuesta.getPosiciones();
         for (int i = 0; i < 10; i++) {
-            if (checkers[numeros[i] - 1]) {
+            if (verificador[numeros[i] - 1]) {
                 apuesta.setRechazo(true);
                 pasosVerificarApuesta++;
                 return;
             }
 
-            checkers[numeros[i] - 1] = true;
+            verificador[numeros[i] - 1] = true;
         }
         cantidadApuestasAceptadas++;
         long ultimo = System.nanoTime();
